@@ -36,11 +36,11 @@ header img {
 nav a {
     color: #0065FC;
     text-decoration: none;
-
     margin-left: 20px;
+    padding-top: 28px;
 }
 nav a:hover {
-    border-top: 2px solid #0065FC
+    border-top: 3px solid #0065FC
 }
 
 .main-container {
