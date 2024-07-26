@@ -16,6 +16,31 @@
 body {
     display: flex;
     justify-content: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F2F2F2;
+    color: white;
+}
+header h1 {
+    margin: 0;
+}
+header img {
+    height: 40px; /* Ajuste la hauteur de l'image du logo selon les besoins */
+}
+nav a {
+    color: #0065FC;
+    text-decoration: none;
+
+    margin-left: 20px;
+}
+nav a:hover {
+    border-top: 2px solid #0065FC
 }
 
 .main-container {
