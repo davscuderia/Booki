@@ -75,7 +75,21 @@ nav a:hover {
   .search-button:hover {
       background-color: #0051c4;
   }
-
+  .search-button.mobile {
+    display: none;
+}
+@media (max-width: 768px) {
+    .search-button.desktop {
+        display: none;
+    }
+    .search-button.mobile {
+        display: block;
+        padding: 8px; /* Adjust padding for mobile */
+        border-radius: 0 5px 5px 0;
+        background-color: #0065FC;
+        color: white;
+    }
+}
 .main-container {
     width: 100%;
     max-width: 1440px;
