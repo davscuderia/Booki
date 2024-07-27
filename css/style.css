@@ -48,23 +48,23 @@ nav a:hover {
     margin: 20px 0;
   }
   
-  i {
+i {
       height: 20px; /* Ajustez la hauteur de l'image du logo de recherche */
       margin-right: 10px; /* Espace entre le logo et le formulaire */ 
   }
   
-  .formulaire-de-recherche {
+.formulaire-de-recherche {
     display: flex;
   }
   
-  .formulaire-de-recherche input {
+.formulaire-de-recherche input {
       width: 100%;
       padding: 9px;
       border: 1px solid #ccc;
       border-radius: 5px 0 0 5px;
   }
   
-  .search-button {
+.search-button {
     padding: 10px 20px;
     border: none;
     background-color: #0065FC;
@@ -72,10 +72,10 @@ nav a:hover {
     border-radius: 0 5px 5px 0;
   }
   
-  .search-button:hover {
+.search-button:hover {
       background-color: #0051c4;
   }
-  .search-button.mobile {
+.search-button.mobile {
     display: none;
 }
 @media (max-width: 768px) {
