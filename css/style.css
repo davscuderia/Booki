@@ -89,6 +89,89 @@ i {
         background-color: #0065FC;
         color: white;
     }
+.filtres {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    }
+
+.filtres p {
+    margin: 0;
+    margin-right: 20px;
+    font-weight: 700;
+    }
+
+.bouton-filtres {
+    display: flex;
+    gap: 10px; /* Espace entre les boutons */
+    }
+
+.bouton-filtres div {
+    display: flex;
+    align-items: center;
+    padding: 4px 19px 4px 19px;
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+    }
+
+.bouton-filtres div:hover {
+    background-color: var(--filter-bg-color);
+    }
+
+.bouton-filtres i {
+    margin-right: 5px;
+    color: var(--main-color);
+    }
+
+.bouton-filtres a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+    }
+
+}
+.filtres {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.filtres p {
+    margin: 0;
+    margin-right: 20px;
+    font-weight: 700;
+}
+
+.bouton-filtres {
+    display: flex;
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.bouton-filtres div {
+    display: flex;
+    align-items: center;
+    padding: 4px 19px 4px 19px;
+    border: 2px solid var(--main-color);
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.bouton-filtres div:hover {
+    background-color: var(--filter-bg-color);
+}
+
+.bouton-filtres i {
+    margin-right: 5px;
+    color: var(--main-color);
+}
+
+.bouton-filtres a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
 }
 .main-container {
     width: 100%;
