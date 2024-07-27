@@ -173,19 +173,23 @@ i {
     color: var(--main-color);
     font-weight: 700;
 }
-span i {
-    color: var(--main-color);
- }
- .info-bar a{
-   text-decoration: none;
-   font-size: 16px;
-     font-weight: 400;
- }
-.main-container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 50px;
-    box-sizing: border-box;
+.info-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0.90em;
+}
+.info-bar a{
+  text-decoration: none;
+  font-size: 16px;
+    font-weight: 400;
+}
+.info-bar span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px; /* Espace entre l'icône et le texte */
+    color: var(--main-color);  
 }
 
 a {
