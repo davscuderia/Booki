@@ -15,8 +15,15 @@
 
 body {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;  
+}
+
+/*pour centraliser et limiter le contenu*/
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 header {
@@ -177,6 +184,7 @@ i {
     display: flex;
     align-items: center;
     padding: 10px;
+    border: 1px solid silver;
     border-radius: 0.90em;
 }
 .info-bar a{
