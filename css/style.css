@@ -184,21 +184,22 @@ i {
     display: flex;
     align-items: center;
     padding: 10px;
-    border: 1px solid silver;
-    border-radius: 0.90em;
 }
+
 .info-bar a{
-  text-decoration: none;
-  font-size: 16px;
+    text-decoration: none;
+    font-size: 16px;
     font-weight: 400;
 }
 .info-bar span {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.25em;
     margin-right: 10px; /* Espace entre l'icône et le texte */
-    color: var(--main-color);  
-}/*problème d'affichage après le rajout de cette section */
+    border: 1px solid silver;
+    border-radius: 0.90em; 
+}
 
 a {
     color: inherit;
