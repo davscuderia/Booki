@@ -177,7 +177,6 @@ i {
 
 .bouton-filtres a {
     text-decoration: none;
-    color: var(--main-color);
     font-weight: 700;
 }
 .info-bar {
