@@ -190,7 +190,7 @@ i {
     justify-content: center;
     margin-right: 10px; /* Espace entre l'icône et le texte */
     color: var(--main-color);  
-}
+}/*problème d'affichage après le rajout de cette section */
 
 a {
     color: inherit;
