@@ -160,7 +160,7 @@ i {
     display: flex;
     align-items: center;
     padding: 4px 19px 4px 19px;
-    border: 2px solid var(--main-color);
+    border: 2px solid silver;
     border-radius: 25px;
     background-color: white;
     cursor: pointer;
