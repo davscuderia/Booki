@@ -8,7 +8,10 @@
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
 }
-
+body, html {
+    margin: 0;
+    padding: 0;
+}
 .fa-solid {
     color: var(--main-color);
 }
@@ -56,8 +59,7 @@ nav a:hover {
   }
   
 i {
-      height: 20px; /* Ajustez la hauteur de l'image du logo de recherche */
-      margin-right: 10px; /* Espace entre le logo et le formulaire */ 
+      height: 20px; /* Ajustez la hauteur de l'image du logo de recherche */ 
   }
   
 .formulaire-de-recherche {
@@ -85,60 +87,7 @@ i {
 .search-button.mobile {
     display: none;
 }
-@media (max-width: 768px) {
-    .search-button.desktop {
-        display: none;
-    }
-    .search-button.mobile {
-        display: block;
-        padding: 8px; /* Adjust padding for mobile */
-        border-radius: 0 5px 5px 0;
-        background-color: #0065FC;
-        color: white;
-    }
-.filtres {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    }
 
-.filtres p {
-    margin: 0;
-    margin-right: 20px;
-    font-weight: 700;
-    }
-
-.bouton-filtres {
-    display: flex;
-    gap: 10px; /* Espace entre les boutons */
-    }
-
-.bouton-filtres div {
-    display: flex;
-    align-items: center;
-    padding: 4px 19px 4px 19px;
-    border: 2px solid var(--main-color);
-    border-radius: 25px;
-    background-color: white;
-    cursor: pointer;
-    }
-
-.bouton-filtres div:hover {
-    background-color: var(--filter-bg-color);
-    }
-
-.bouton-filtres i {
-    margin-right: 5px;
-    color: var(--main-color);
-    }
-
-.bouton-filtres a {
-    text-decoration: none;
-    color: var(--main-color);
-    font-weight: 700;
-    }
-
-}
 .filtres {
     display: flex;
     align-items: center;
@@ -190,6 +139,7 @@ i {
     font-size: 16px;
     font-weight: 400;
 }
+
 .info-bar span {
     display: flex;
     align-items: center;
@@ -250,7 +200,34 @@ a {
 .hebergements {
     width: 65%;
 }
-
+.section-title {
+    display: flex;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 5px;
+    
+}
+.hebergements-cards {
+    display: flex;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 33px; /*augmente l'espace avec la section-title*/
+}
+.hebergements-cards .card img{
+    width : 100%;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hebergements-cards a {
+    width: calc(33% - 20px);
+}
+.afficher-plus {
+    font-weight: 700;
+    font-size: 18px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -338,5 +315,57 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+        .search-button.desktop {
+            display: none;
+        }
+        .search-button.mobile {
+            display: block;
+            padding: 8px; /* Adjust padding for mobile */
+            border-radius: 0 5px 5px 0;
+            background-color: #0065FC;
+            color: white;
+        }
+    .filtres {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        }
+    
+    .filtres p {
+        margin: 0;
+        margin-right: 20px;
+        font-weight: 700;
+        }
+    
+    .bouton-filtres {
+        display: flex;
+        gap: 10px; /* Espace entre les boutons */
+        }
+    
+    .bouton-filtres div {
+        display: flex;
+        align-items: center;
+        padding: 4px 19px 4px 19px;
+        border: 2px solid var(--main-color);
+        border-radius: 25px;
+        background-color: white;
+        cursor: pointer;
+        }
+    
+    .bouton-filtres div:hover {
+        background-color: var(--filter-bg-color);
+        }
+    
+    .bouton-filtres i {
+        margin-right: 5px;
+        color: var(--main-color);
+        }
+    
+    .bouton-filtres a {
+        text-decoration: none;
+        color: var(--main-color);
+        font-weight: 700;
+        }
+    
     /* ... */
 }
