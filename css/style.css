@@ -92,6 +92,8 @@ i {
 
 .filtres {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     padding: 10px 0;
 }
@@ -130,7 +132,7 @@ i {
     text-decoration: none;
     font-weight: 700;
 }
-/****section filtres****/
+/****section infos****/
 
 .info-bar {
     display: flex;
@@ -275,6 +277,7 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
 /****Activités****/
 .activites {
     margin: 40px 0;
@@ -286,6 +289,7 @@ a {
     font-size: 22px;
     text-align: left;
 }
+
 .cards {
     
     background-color: white;
@@ -316,9 +320,9 @@ a {
 footer {
     display: flex;
     flex-wrap: wrap;
-  
     background-color: #F2F2F2;
 }
+
 .a-propos {
     display: flex;
     flex-direction: column;
@@ -385,6 +389,29 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 30px;
+        color: white;
+    }
+      
+    header img {
+        height: 30px; /* Ajuste la hauteur de l'image du logo selon les besoins */
+    }
+    nav  {
+        display: flex;   
+    }
+    nav a {
+        display: flex;
+        
+    }
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+    h2   
         .search-button.desktop {
             display: none;
         }
@@ -399,8 +426,8 @@ footer {
         display: flex;
         align-items: center;
         padding: 10px 0;
-        }
-    
+        flex-wrap: wrap;
+    }
     .filtres p {
         margin: 0;
         margin-right: 20px;
@@ -409,6 +436,7 @@ footer {
     
     .bouton-filtres {
         display: flex;
+        flex-wrap: wrap;
         gap: 10px; /* Espace entre les boutons */
         }
     
@@ -416,12 +444,12 @@ footer {
         display: flex;
         align-items: center;
         padding: 4px 19px 4px 19px;
-        border: 2px solid var(--main-color);
+        border: 2px solid silver;
         border-radius: 25px;
         background-color: white;
         cursor: pointer;
         }
-    
+        
     .bouton-filtres div:hover {
         background-color: var(--filter-bg-color);
         }
@@ -433,9 +461,8 @@ footer {
     
     .bouton-filtres a {
         text-decoration: none;
-        color: var(--main-color);
         font-weight: 700;
         }
-    
+        
     /* ... */
 }
