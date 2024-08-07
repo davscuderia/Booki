@@ -61,7 +61,8 @@ nav a:hover {
 i {
       height: 20px; /* Ajustez la hauteur de l'image du logo de recherche */ 
   }
-  
+ /***section recherche***/
+
 .formulaire-de-recherche {
     display: flex;
   }
@@ -87,6 +88,7 @@ i {
 .search-button.mobile {
     display: none;
 }
+/****section filtres****/
 
 .filtres {
     display: flex;
@@ -128,6 +130,8 @@ i {
     text-decoration: none;
     font-weight: 700;
 }
+/****section filtres****/
+
 .info-bar {
     display: flex;
     align-items: center;
@@ -283,19 +287,26 @@ a {
     text-align: left;
 }
 .cards {
-    flex: 1;
+    
+    background-color: white;
+    border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .activites-cards {
     display: flex;
     gap: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
+}    
+
+.activites-cards .card-title {
+    
+    padding: 20px 1px 20px 19px; /*** aère le texte sous l'image***/
 }
 
 .cards img {
     width : 100%;
-    max-width: 245px;
+    max-width: 253px;
     height: 380px;
     object-fit: cover; /*évite la déformation des images*/
     border-top-left-radius: 20px;
