@@ -59,7 +59,8 @@ nav a:hover {
   }
   
 i {
-      height: 20px; /* Ajustez la hauteur de l'image du logo de recherche */ 
+    color: #0065FC;
+    height: 20px; /* Ajustez la hauteur de l'image du logo de recherche */ 
   }
  /***section recherche***/
 
@@ -73,13 +74,15 @@ i.fa-solid.fa-location-dot {
     border-radius: 5px 0 0 5px;
     background-color: #F2F2F2;
 }  
-.formulaire-de-recherche input {
+.formulaire-de-recherche-desktop input {
       width: 100%;
       padding: 9px;
       border: 1px solid #F2F2F2;
       background-color: #FFFFFF;
   }
-  
+.formulaire-de-recherche-mobile input {
+    display: none;
+}  
 .search-button {
     padding: 10px 20px;
     border: none;
@@ -416,17 +419,31 @@ footer {
     nav a:hover {
         border-top: none;
         border-bottom: 3px solid #0065FC;
-    }
-    h2   
-        .search-button.desktop {
+    } 
+    .search-button.desktop {
             display: none;
         }
+    i.fa.fa-search {
+        color:#FFFFFF
+    } 
+    .formulaire-de-recherche-desktop {
+        display: none;
+    }
+    .formulaire-de-recherche-mobile input {
+        display: block;
+        width: 100%;
+        padding: 9px;
+        border: 1px solid #F2F2F2;
+        background-color: #FFFFFF;
+    }
         .search-button.mobile {
             display: block;
             padding: 8px; /* Adjust padding for mobile */
-            border-radius: 0 5px 5px 0;
+            border-radius: 10px;
             background-color: #0065FC;
             color: white;
+            box-shadow: 5px 5px 6px #DEEBFF;
+            
         }
     .filtres {
         display: flex;
@@ -448,6 +465,8 @@ footer {
     
     .bouton-filtres div {
         display: flex;
+        width: 162.5px;
+        height: 50px;
         align-items: center;
         padding: 4px 19px 4px 19px;
         border: 2px solid silver;
