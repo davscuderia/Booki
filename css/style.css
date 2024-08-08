@@ -66,12 +66,18 @@ i {
 .formulaire-de-recherche {
     display: flex;
   }
-  
+i.fa-solid.fa-location-dot {
+    color: black;
+    border: none;
+    padding: 8px;
+    border-radius: 5px 0 0 5px;
+    background-color: #F2F2F2;
+}  
 .formulaire-de-recherche input {
       width: 100%;
       padding: 9px;
-      border: 1px solid #ccc;
-      border-radius: 5px 0 0 5px;
+      border: 1px solid #F2F2F2;
+      background-color: #FFFFFF;
   }
   
 .search-button {
